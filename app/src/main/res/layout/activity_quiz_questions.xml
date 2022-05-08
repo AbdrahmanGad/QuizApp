@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DFDF"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What country does this flag belongs to?"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/questionColor"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="305dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_flag_of_argentina"/>
+
+
+        <LinearLayout
+            android:id="@+id/llProgressDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="wrap_content"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"/>
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp"
+                android:text="0/10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="clip_vertical">
+
+
+                <TextView
+                    android:id="@+id/tvOptionOne"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/default_option_border_bg"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#7A8089"
+                    android:layout_margin="10dp"
+                    android:textSize="18sp"
+                    tools:text="Argentina"/>
+
+                <TextView
+                    android:id="@+id/tvOptionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_option_border_bg"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#7A8089"
+                    android:textSize="18sp"
+                    tools:text="Egypt"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvOptionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_option_border_bg"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#7A8089"
+                    android:textSize="18sp"
+                    tools:text="Germany"/>
+
+                <TextView
+                    android:id="@+id/tvOptionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/default_option_border_bg"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="#7A8089"
+                    android:textSize="18sp"
+                    tools:text="USA"/>
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="#9013FE"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
